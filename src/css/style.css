@@ -264,6 +264,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .project-info {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 670px) {
@@ -311,10 +314,6 @@ body {
     cursor: pointer;
     padding: 0.2rem 0.4rem;
   }
-
-  /* .hamburger.active {
-    border: 1px dotted gray;
-  } */
 
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;

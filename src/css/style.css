@@ -101,11 +101,13 @@ body {
   margin: 0 1rem;
   font-size: 0.8rem;
   font-weight: var(--weight-semibold);
+  user-select: none;
 }
 
 .navbar #logo img {
   display: block;
   width: 40px;
+  user-select: none;
 }
 
 .navbar .btn {
@@ -144,6 +146,7 @@ body {
   width: 150px;
   border-radius: 50%;
   animation: bounce 1s infinite alternate;
+  user-select: none;
 }
 
 @keyframes bounce {
@@ -225,6 +228,7 @@ body {
 #footer a {
   font-size: 0.8rem;
   color: #fff;
+  user-select: none;
 }
 
 #footer a:hover {
@@ -238,6 +242,7 @@ body {
 #footer .social img {
   width: 20px;
   height: 20px;
+  user-select: none;
 }
 
 #footer .social a {
@@ -246,6 +251,7 @@ body {
 
 #footer p {
   font-size: 0.8rem;
+  user-select: none;
 }
 
 /* Responsiveness */
@@ -257,7 +263,8 @@ body {
   }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+}
 
 @media (max-width: 670px) {
   .navbar .nav-menu {

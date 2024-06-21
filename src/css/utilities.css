@@ -36,6 +36,7 @@ h2::selection {
   margin: 5px 0;
   background-color: var(--bg-secondary);
   color: var(--bg-primary);
+  user-select: none;
 }
 
 /* add hover to resume button */
@@ -55,24 +56,25 @@ h2::selection {
   cursor: pointer;
 }
 
-.toggle-icons>img {
+.toggle-icons > img {
   transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   width: 30px;
+  user-select: none;
 }
 
-#switch+.toggle-icons .sun {
+#switch + .toggle-icons .sun {
   display: none;
 }
 
-#switch+.toggle-icons .moon {
+#switch + .toggle-icons .moon {
   display: flex;
 }
 
-#switch:checked+.toggle-icons .moon {
+#switch:checked + .toggle-icons .moon {
   display: none;
 }
 
-#switch:checked+.toggle-icons .sun {
+#switch:checked + .toggle-icons .sun {
   display: flex;
 }
 
@@ -86,7 +88,7 @@ h2::selection {
   padding: 1rem;
 }
 
-.header-container>div {
+.header-container > div {
   margin-top: 1rem;
 }
 
@@ -167,7 +169,9 @@ h2::selection {
 .card:nth-child(6) {
   background: url(../assets/project/project-six.png) center center/cover;
 }
-
+.prevent-select {
+  user-select: none;
+}
 /* Media Queries */
 @media (max-width: 768px) {
   .header-container {

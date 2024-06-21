@@ -286,7 +286,8 @@ body {
   }
 
   .nav-menu.active {
-    right: 20px;
+    right: 4px;
+    width: 100%;
   }
 
   .nav-menu .nav-link {
@@ -311,9 +312,9 @@ body {
     padding: 0.2rem 0.4rem;
   }
 
-  .hamburger.active {
+  /* .hamburger.active {
     border: 1px dotted gray;
-  }
+  } */
 
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;

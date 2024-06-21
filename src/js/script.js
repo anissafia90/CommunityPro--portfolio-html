@@ -23,16 +23,6 @@ const toggleSwitch = document.querySelector(
   '.theme-switch input[type="checkbox"]'
 );
 
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-  }
-}
-
-toggleSwitch.addEventListener("change", switchTheme, false);
-
 //  Store color theme for future visits
 
 function switchTheme(e) {
@@ -44,6 +34,8 @@ function switchTheme(e) {
     localStorage.setItem("theme", "light"); //add this
   }
 }
+
+toggleSwitch.addEventListener("change", switchTheme, false);
 
 // Save user preference on load
 
